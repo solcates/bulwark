@@ -1,0 +1,48 @@
+{
+    "name": "bulwark",
+    "version": "0.0.1",
+    "description": "A native Node.js addon that acts as an abstraction of the PKCS#11 API v2.20 from RSA.",
+    "main": "index.js",
+    "scripts": {
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/swaj/bulwark"
+    },
+    "keywords": [
+        "cryptography",
+        "rsa",
+        "pkcs#11",
+        "symmetric",
+        "asymmetric",
+        "signature",
+        "sign",
+        "verify",
+        "verification",
+        "hash",
+        "digest",
+        "crypto"
+    ],
+    "engines": {
+        "node": "^0.10"
+    },
+    "author": "Scott W. Anderson <scott@geeksharp.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/swaj/bulwark/issues"
+    },
+    "homepage": "https://github.com/swaj/bulwark",
+    "dependencies": {
+        "addon-layer": "tjfontaine/node-addon-layer",
+        "vasync": "^1.4.3",
+        "lodash": "^2.4.1",
+        "validator": "^3.11.2",
+        "bindings": "^1.2.0"
+    },
+    "devDependencies": {
+        "lab": "^3.1.1",
+        "jsdoc": "~3.2.2",
+        "benchmark": "^1.0.0"
+    }
+}

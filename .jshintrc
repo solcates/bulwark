@@ -1,0 +1,81 @@
+{
+    // ## Enforcing Options
+    // When set to true, these options will make JSHint produce more warnings.
+    "bitwise":      false,    // Prohibits the use of bitwise ^ (XOR), | (OR), etc. operators.
+    "camelcase":    true,     // Forces all variable names to use either camelCase style or UPPER_CASE with underscores.
+    "curly":        true,     // Requires you to always place curly braces around blocks in loops and conditionals.
+    "eqeqeq":       true,     // Prohibits the use of == and != in favor of === and !==.
+    "es3":          false,    // Forces your code to adher to ECMAScript 3.  Useful if you need to support IE6/7/8/9.
+    "forin":        true,     // Requires all "for .. in" loops to filter the object's items (i.e. with hasOwnProperty).
+    "freeze":       false,    // Prohobits modification of the prototype for native objects (such as Date and Array).
+    "immed":        true,     // Prohibits the use of immediate function invocations without wrapping them with ().
+    "indent":       4,        // Enforces the tab width (indent spaces) for your code.
+    "latedef":      "nofunc", // Prohibits the use of a variable before it has been defined.
+    "newcap":       true,     // Requires you to capitalize names of constructor functions.
+    "noarg":        true,     // Prohibits the use of arguments.caller and arguments.callee.
+    "noempty":      true,     // Warns if you have an empty block in your code.
+    "nonbsp":       true,     // Prohibits the use of "&nbsp;" (non-breaking space) in HTML.
+    "nonew":        true,     // Prohibits the use of constructor fucntions for side-effects.
+    "plusplus":     false,    // Prohibits the use of unary increment (++) and decrement (--) operators.
+    "quotmark":     "double", // Forces you to use double quotes everywhere!
+    "undef":        true,     // Prohibits the use of explicitly undeclared variables.
+    "unused":       "vars",   // Warns if you define a variable and never use it.
+    "strict":       true,     // Requires all functions to run in ECMASCript 5's strict mode.
+    "trailing":     true,     // Prohibits trailing whitespace.
+    "maxparams":    4,        // Using more than 4 parameters for a function?  Use an options object instead.
+    "maxlen":       120,      // Lines should not exceed 120 characters.
+
+
+    // ## Relaxing Options
+    // When set to true, these options will make JSHint produce less warnings.
+    "asi":          false,    // Tolerate missing semicolons.
+    "boss":         false,    // Tolerate assignemnts in cases where comparisons are expected.
+    "debug":        false,    // Tolerate debugger statements in your code.
+    "eqnull":       false,    // Tolerate use of == null.
+    "esnext":       false,    // Allow the use of ES.next features (let, const).
+    "evil":         false,    // Allow the use of eval().
+    "expr":         true,     // Allow the use of expressions where normally you would expect to see function calls.
+    "funcscope":    false,    // Tolerate declaration of variables inside control structures and accessing them outside.
+    "gcl":          false,    // Make JSHint compatible with Google Closure Compiler.
+    "globalstrict": false,    // Tolerate the global use of "use strict".
+    "iterator":     false,    // Tolerate the use of the __iterator__ property.
+    "lastsemic":    false,    // Tolerate missing semicolons when it is omitted for the last statement in a one-line'er.
+    "laxbreak":     false,    // Tolerate possibly unsafe line breaks.
+    "laxcomma":     false,    // Tolerate comma-first coding style.
+    "loopfunc":     false,    // Tolerate defining functions inside loops.
+    "maxerr":       100,      // The maximum number of errors to show before JSHint bails.
+    "moz":          false,    // Tolerate the use of Mozilla's JavaScript extensions.
+    "multistr":     false,    // Tolerate multi-line strings without an escape character.
+    "notypeof":     false,    // Tolerate invalid typeof operator values caused by common typos.
+    "proto":        false,    // Tolerate the use of the __proto__ property.
+    "scripturl":    false,    // Tolerate the use of script-targeted URL's such as javascript:....
+    "smarttabs":    false,    // Tolerate the mixed use of tabs and spaces when spaces are used for alignment only.
+    "shadow":       false,    // Tolerate variable shadowing.
+    "sub":          false,    // Tolerate [] notation for accessing properties, when dot notation would be valid.
+    "supernew":     false,    // Tolerate weird constructions, like new function() { ... } and new Object.
+    "validthis":    false,    // Tolerate this use of "this" in non-constructor functions when in strict mode.
+    "noyield":      false,    // Allow generator functions with no yield statement.
+    
+    
+    // ## Envrionments
+    // These options let JSHint know about some pre-defined global variables.
+    "browser":      true,     // Defines globals exposed by modern browsers (document, window, etc.)
+    "couch":        false,    // Defines globals exposed by CouchDB.
+    "devel":        true,     // Defines globals commonly used for development (console, alert).
+    "dojo":         false,    // Defines globals exposed by the Dojo Toolkit.
+    "jquery":       true,     // Defines globals exposed by jQuery.
+    "mootools":     false,    // Defines globals exposed by MooTools.
+    "node":         true,     // Defines globals exposed by Node.js and skips some warnings that don't make sense.
+    "nonstandard":  false,    // Defines non-standard, but widely-used globals such as escape and unescape.
+    "phantom":      false,    // Defines globals exposed by PhantomJS.
+    "prototypejs":  false,    // Defines globals exposed by the Prototype JavaScript framework.
+    "rhino":        false,    // Defines globals exposed by the Rhino runtime.
+    "worker":       false,    // Defines globals available when running inside of a Web Worker.
+    "wsh":          false,    // Defines globals exposed by the Windows Script Host.
+    "yui":          false,    // Defines globals exposed by YUI.
+    "globals": {
+        // extra globals that you want to define:
+        // "describe": true
+        // "it": true
+    }
+}

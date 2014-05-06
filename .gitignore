@@ -1,0 +1,14 @@
+lib-cov
+*.log
+*.pid
+*.debug
+._*
+.DS_Store
+report.tap
+cover.html
+
+results
+build
+node_modules
+docs
+deps
