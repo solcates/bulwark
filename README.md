@@ -1,4 +1,4 @@
-# Bulwark:  a Node.js Native PKCS#11 Interface
+# Bulwark:  Node.js + PKCS#11
 
 Bulwark is a native Node.js addon that utilizes the RSA PKCS#11 API (v2.20) to perform cryptographic operations.  This module, specifically, acts as a common layer upon which various vendor-specific additions can be made. 
 
