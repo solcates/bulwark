@@ -4,7 +4,45 @@ Bulwark is a native Node.js addon that utilizes the RSA PKCS#11 API (v2.20) to p
 
 Bulwark utilizes tjfontaine's excellent [`node-addon-layer`](https://github.com/tjfontaine/node-addon-layer) which provides a nice Node.js add-on interface for C.  This allows us to avoid writing the add-on in C++.  It also gives us a clean upgrade path forward, when the `node-addon-layer` is baked into the Node.js core.
 
-### Contributing to Bulwark
+## Installation
+
+Installation of Bulwark is fairly straightforward.  Just use npm:
+
+    npm install bulwark
+    
+## Usage
+
+Bulwark requires a working PKCS#11 implementation in order to function properly.  Most distrubutions include binaries for [Mozilla's NSS](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS).  NSS offers a pretty good implementation of most PKCS#11 functions, and is the library I use for my own integration testing with Bulwark.
+
+That said, Bulkwark should work without issue on any PKCS#11 API that is compliant with the RSA's PKCS#11 standard, version 2.20.  If you notice any strange issues when using a different implementation, please open an issue and I'll try to help.
+
+Assuming you have a PKCS#11 implementation, using Bulwark is fairly straightforward:
+
+```javascript
+var Bulkwark = require("bulwark");
+
+// tell Bulwark where your PKCS#11 library is.
+Bulwark.setPKCS11Library("/path/to/libnss3.so");
+
+var bulkwark = new Bulwark({
+    chunkSize: 4096,  // how many bytes should be processed for each C_*Update call.
+    pin: "security-module-pin",
+    log: function(level, message) {
+        console.log("[%d]: %s", level, message);
+    }
+});
+
+bulwark.openSession(function(err, session) {
+    // I can perform various functions on the `session` object now.
+
+    session.findSecretKey("my-key", function(err, key) {
+        // I can call functions on the `key` object, too.
+
+    });
+});
+```
+
+## Contributing
 
 Contributions to Bulwark are welcome, however there are some fairly interesting conventions when dealing with native add-ons in Node.js (and specifically Bulwark) that you should be aware of.
 
