@@ -1,0 +1,10 @@
+{
+    "linters": {
+        "clang": {
+            "include_dirs": [
+                "../include",
+                "../node_modules/addon-layer/include"
+            ]
+        }
+    }
+}

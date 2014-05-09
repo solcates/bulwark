@@ -33,11 +33,9 @@ var bulkwark = new Bulwark({
 });
 
 bulwark.openSession(function(err, session) {
-    // I can perform various functions on the `session` object now.
-
+    // You can perform various functions on the `session` object now.
     session.findSecretKey("my-key", function(err, key) {
-        // I can call functions on the `key` object, too.
-
+        // You can call functions on the `key` object, too.
     });
 });
 ```

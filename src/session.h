@@ -4,6 +4,7 @@
 #include "shim.h"
 
 int p11_init(shim_ctx_t* ctx, shim_args_t* args);
+int p11_load(shim_ctx_t* ctx, shim_args_t* args);
 
 
 #endif /* _SESSION_H_ */

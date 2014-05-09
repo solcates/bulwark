@@ -4,6 +4,7 @@
 int init(shim_ctx_t *ctx, shim_val_t *exports, shim_val_t *module) {
     shim_fspec_t funcs[] = {
         // name, cfunc, nargs, data, flags
+        SHIM_FS_FULL("load", p11_load, 5, NULL, 0),
         SHIM_FS_FULL("init", p11_init, 5, NULL, 0),
         SHIM_FS_END,
     };
