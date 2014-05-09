@@ -1,5 +1,5 @@
-#ifndef _SESSION_H_
-#define _SESSION_H_
+#ifndef _OIDS_H_
+#define _OIDS_H_
 
 #include "pkcs11.h"
 
@@ -295,4 +295,4 @@ CK_BYTE BRAINPOOLP512T1[] = { 0x06, 0x09, 0x2B, 0x24, 0x03,
                               0x03, 0x02, 0x08, 0x01, 0x01, 0x0E };
 
 
-#endif /* _SESSION_H_ */
+#endif /* _OIDS_H_ */
