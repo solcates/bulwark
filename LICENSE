@@ -1,3 +1,5 @@
+Bulwark's license follows:
+=============================================================================
 Copyright (c) 2014 Scott W. Anderson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -17,3 +19,26 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+=============================================================================
+
+This license applies to all parts of Bulwark that are not externally maintained
+libraries.  The externally maintained libraries used by Bulwark are:
+
+- The RSA Security Inc. PKCS #11 Cryptographic Token Interface (Cryptoki),
+  located at deps/rsa.  The RSA Security Inc. PKCS #11 Cryptographic Token
+  Interface (Cryptoki) license follows:
+  "
+    License to copy and use this software is granted provided that it is
+    identified as "RSA Security Inc. PKCS #11 Cryptographic Token Interface
+    (Cryptoki)" in all material mentioning or referencing this software.
+
+    License is also granted to make and use derivative works provided that
+    such works are identified as "derived from the RSA Security Inc. PKCS #11
+    Cryptographic Token Interface (Cryptoki)" in all material mentioning or 
+    referencing the derived work.
+
+    RSA Security Inc. makes no representations concerning either the 
+    merchantability of this software or the suitability of this software for
+    any particular purpose. It is provided "as is" without express or implied
+    warranty of any kind.
+  "
