@@ -6,7 +6,7 @@
         {
             "target_name": "shim",
             "dependencies": ["<(node_addon)/binding.gyp:addon-layer", ],
-            "include_dirs": ["<(node_addon)/include", "include"],
+            "include_dirs": ["<(node_addon)/include", "deps/rsa"],
             "sources": [
                 "src/session.c",
                 "src/bulwark.c",
