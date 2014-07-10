@@ -3,4 +3,4 @@
 #include <string.h>
 #include <dlfcn.h>
 
-#include "pkcs11.h"
+#include "cryptoki.h"

@@ -1,8 +1,6 @@
 #ifndef _OIDS_H_
 #define _OIDS_H_
 
-#include "pkcs11.h"
-
 
 /************** SEC2 PRIME CURVES **************/
 

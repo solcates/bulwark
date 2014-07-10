@@ -2,7 +2,7 @@
     "linters": {
         "clang": {
             "include_dirs": [
-                "../include",
+                "../deps/rsa",
                 "../node_modules/addon-layer/include"
             ]
         }
